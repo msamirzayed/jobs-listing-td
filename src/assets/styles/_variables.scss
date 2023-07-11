@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+// Colors
+$primary-color: hsl(180, 29%, 50%);
+$neutral-bg-color: hsl(180, 52%, 96%);
+$neutral-filter-color: hsl(180, 31%, 95%);
+$neutral-dark-color: hsl(180, 8%, 52%);
+$neutral-very-dark-color: hsl(180, 14%, 20%);
+
+//shadows
+$box-shadow: 0 0.5rem 1rem rgba($primary-color, 0.22);
+
+// Typography
+$body-copy-font-size: 15px;
+$heading-font-family: "League Spartan", sans-serif;
+$heading-font-weight-500: 500;
+$heading-font-weight-700: 700;

@@ -1,0 +1,135 @@
+@import 'variables';
+// Styles
+body {
+  font-size: $body-copy-font-size;
+  background-color: $neutral-bg-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
+h1 {
+  font-weight: $heading-font-weight-500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $heading-font-weight-700;
+}
+
+// Example usage
+.primary-text {
+  color: $primary-color;
+}
+
+.background {
+  background-color: $neutral-bg-color;
+}
+
+.filter-tablets {
+  background-color: $neutral-filter-color;
+}
+
+.dark-text {
+  color: $neutral-dark-color;
+}
+
+.very-dark-text {
+  color: $neutral-very-dark-color;
+}
+// header
+
+.header {
+  padding: 45px;
+  background-image: url("../imgs/bg-header-mobile.svg");
+  background-color: $primary-color;
+
+  @media (min-width: 768px) {
+    padding: 45px;
+    background-image: url("../imgs/bg-header-desktop.svg");
+    background-color: $primary-color;
+  }
+}
+
+.job-card {
+  box-shadow: $box-shadow;
+  &.active {
+    border-left: 4px solid $primary-color;
+  }
+}
+
+.job-card-blank {
+  box-shadow: $box-shadow;
+}
+
+.bg-primary__pill {
+  background-color: $primary-color;
+}
+
+.bg-secondary__pill {
+  background-color: $neutral-very-dark-color;
+}
+
+.bg-tags {
+  background-color: $neutral-bg-color;
+  color: $primary-color;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+  &.activeFilter {
+    color: #fff;
+    background-color: $primary-color;
+    &:hover {
+      background-color: $neutral-bg-color;
+      color: $primary-color;
+    }
+  }
+}
+
+.bg-tags-filters {
+  background-color: $neutral-bg-color;
+  color: $primary-color;
+}
+
+.img-responsive {
+  width: 3.75rem;
+  position: absolute;
+  bottom: 90%;
+  left: 5%;
+}
+
+.controls__btn__remove {
+  border-radius: 0% 10% 10% 0%;
+  background-color: $primary-color;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $neutral-very-dark-color;
+  }
+}
+
+.job__card__title {
+  transition: color 0.3s ease;
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+.clear__btn {
+  margin-left: auto;
+  &:hover {
+    text-decoration: underline;
+  }
+}
